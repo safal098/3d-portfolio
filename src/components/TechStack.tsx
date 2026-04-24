@@ -151,6 +151,17 @@ const TechStack = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const imageUrls = [
+    `${import.meta.env.BASE_URL}images/python.png`,
+    `${import.meta.env.BASE_URL}images/mysql.webp`,
+    `${import.meta.env.BASE_URL}images/javascript.webp`,
+    `${import.meta.env.BASE_URL}images/typescript.webp`,
+    `${import.meta.env.BASE_URL}images/react2.webp`,
+    `${import.meta.env.BASE_URL}images/node2.webp`,
+  ];
+  const textures = imageUrls.map((url) => textureLoader.load(url));
+
   const materials = useMemo(() => {
     return textures.map(
       (texture) =>
@@ -164,49 +175,66 @@ const TechStack = () => {
           clearcoat: 0.1,
         })
     );
-  }, []);
+  }, [textures]);
 
   return (
     <div className="techstack">
-      <h2> My Techstack</h2>
-
-      <Canvas
-        shadows
-        gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-        camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
-        onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
-        className="tech-canvas"
-      >
-        <ambientLight intensity={1} />
-        <spotLight
-          position={[20, 20, 25]}
-          penumbra={1}
-          angle={0.2}
-          color="white"
-          castShadow
-          shadow-mapSize={[512, 512]}
-        />
-        <directionalLight position={[0, 5, -4]} intensity={2} />
-        <Physics gravity={[0, 0, 0]}>
-          <Pointer isActive={isActive} />
-          {spheres.map((props, i) => (
-            <SphereGeo
-              key={i}
-              {...props}
-              material={materials[Math.floor(Math.random() * materials.length)]}
-              isActive={isActive}
+      <h2>My Techstack</h2>
+      <div className="techstack-content">
+        <div className="techstack-canvas-wrapper">
+          <Canvas
+            shadows
+            gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
+            camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
+            onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
+            className="tech-canvas"
+          >
+            <ambientLight intensity={1} />
+            <spotLight
+              position={[20, 20, 25]}
+              penumbra={1}
+              angle={0.2}
+              color="white"
+              castShadow
+              shadow-mapSize={[512, 512]}
             />
-          ))}
-        </Physics>
-        <Environment
-          files={`${import.meta.env.BASE_URL}models/char_enviorment.hdr`}
-          environmentIntensity={0.5}
-          environmentRotation={[0, 4, 2]}
-        />
-        <EffectComposer enableNormalPass={false}>
-          <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
-        </EffectComposer>
-      </Canvas>
+            <directionalLight position={[0, 5, -4]} intensity={2} />
+            <Physics gravity={[0, 0, 0]}>
+              <Pointer isActive={isActive} />
+              {spheres.map((props, i) => (
+                <SphereGeo
+                  key={i}
+                  {...props}
+                  material={materials[Math.floor(Math.random() * materials.length)]}
+                  isActive={isActive}
+                />
+              ))}
+            </Physics>
+            <Environment
+              files={`${import.meta.env.BASE_URL}models/char_enviorment.hdr`}
+              environmentIntensity={0.5}
+              environmentRotation={[0, 4, 2]}
+            />
+            <EffectComposer enableNormalPass={false}>
+              <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
+            </EffectComposer>
+          </Canvas>
+        </div>
+        <div className="techstack-info">
+          <div className="techstack-column">
+            <h3>Languages</h3>
+            <p>Python, C, C++, SQL, Pandas, NumPy, Matplotlib</p>
+          </div>
+          <div className="techstack-column">
+            <h3>Technologies & Frameworks</h3>
+            <p>GitHub, Django, Git, N8N, LangChain, FastAPI, WebScraping</p>
+          </div>
+          <div className="techstack-column">
+            <h3>Areas of Expertise</h3>
+            <p>Operating Systems, DBMS, Artificial Intelligence, OOPS Concept, Web Development, MCP Server, AI Automation</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
