@@ -12,17 +12,6 @@ import {
 } from "@react-three/rapier";
 
 const textureLoader = new THREE.TextureLoader();
-const imageUrls = [
-  `${import.meta.env.BASE_URL}images/react2.webp`,
-  `${import.meta.env.BASE_URL}images/next2.webp`,
-  `${import.meta.env.BASE_URL}images/node2.webp`,
-  `${import.meta.env.BASE_URL}images/express.webp`,
-  `${import.meta.env.BASE_URL}images/mongo.webp`,
-  `${import.meta.env.BASE_URL}images/mysql.webp`,
-  `${import.meta.env.BASE_URL}images/typescript.webp`,
-  `${import.meta.env.BASE_URL}images/javascript.webp`,
-];
-const textures = imageUrls.map((url) => textureLoader.load(url));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
@@ -152,17 +141,16 @@ const TechStack = () => {
     };
   }, []);
 
-  const imageUrls = [
-    `${import.meta.env.BASE_URL}images/python.png`,
-    `${import.meta.env.BASE_URL}images/mysql.webp`,
-    `${import.meta.env.BASE_URL}images/javascript.webp`,
-    `${import.meta.env.BASE_URL}images/typescript.webp`,
-    `${import.meta.env.BASE_URL}images/react2.webp`,
-    `${import.meta.env.BASE_URL}images/node2.webp`,
-  ];
-  const textures = imageUrls.map((url) => textureLoader.load(url));
-
   const materials = useMemo(() => {
+    const imageUrls = [
+      `${import.meta.env.BASE_URL}images/python.png`,
+      `${import.meta.env.BASE_URL}images/mysql.webp`,
+      `${import.meta.env.BASE_URL}images/javascript.webp`,
+      `${import.meta.env.BASE_URL}images/typescript.webp`,
+      `${import.meta.env.BASE_URL}images/react2.webp`,
+      `${import.meta.env.BASE_URL}images/node2.webp`,
+    ];
+    const textures = imageUrls.map((url) => textureLoader.load(url));
     return textures.map(
       (texture) =>
         new THREE.MeshPhysicalMaterial({
@@ -175,7 +163,7 @@ const TechStack = () => {
           clearcoat: 0.1,
         })
     );
-  }, [textures]);
+  }, []);
 
   return (
     <div className="techstack">
