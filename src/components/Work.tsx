@@ -5,32 +5,32 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
+    title: "Nepali-English Code Switch sentiment engine",
+    category: "NLP & AI Pipeline",
+    tools: "Ollama (qwen2.5:7b), JSON classification, Rule-based pre-filter",
     image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    link: "https://github.com/safal098",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
+    title: "ML Similar Face Detector",
+    category: "ML Web Application",
+    tools: "Streamlit, Computer Vision",
     image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    link: "https://github.com/safal098",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
+    title: "Project Weather Forecasting IoT",
+    category: "Embedded Systems",
+    tools: "C++, NodeMCU/ESP8266, Sensors, Wi-Fi",
     image: "/images/broki.png",
-    link: "https://broki.in",
+    link: "https://github.com/safal098",
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
+    title: "Cancer Detection & Object Detection",
+    category: "Machine Learning Models",
+    tools: "Diabetes calculation, Computer Vision",
     image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    link: "https://github.com/safal098",
   },
 ];
 
