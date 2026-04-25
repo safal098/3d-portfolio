@@ -103,7 +103,7 @@ npm run preview
 ---
 
 ## 📁 Project Structure
-
+```bash
 ├── public/
 │   └── images/          # Project images
 ├── src/
@@ -117,7 +117,7 @@ npm run preview
 ├── index.html
 ├── vite.config.js
 └── tailwind.config.js
-
+```
 ---
 
 ## 🤝 Contributing
@@ -138,17 +138,17 @@ Then open a Pull Request 🚀
 
 ##📄 License
 
-This project is licensed under the MIT License
+- This project is licensed under the MIT License
 
 ##👨‍💻 Author
 
 Safal Sharma
-NLP Researcher | Data Science Engineer | AI Builder
+-NLP Researcher | Data Science Engineer | AI Builder
 
 <div align="center">
 
 💡 Blending AI with immersive web experiences
 
-Made with ❤️ by Safal Sharma
+ - Made with ❤️ by Safal Sharma
 
-</div> ```
+</div> 
