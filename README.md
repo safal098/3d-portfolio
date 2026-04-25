@@ -90,15 +90,20 @@ npm run build
 ```bash
 npm run preview
 ```
-```
-🚀 Deployment
-Platform	Method
-GitHub Pages	npm run deploy
-Vercel	Import repo
-Netlify	Drag & drop dist/
-Cloudflare Pages	Connect repo
-📁 Project Structure
-3d-portfolio/
+
+## 🚀 Deployment
+
+| Platform            | Method |
+|--------------------|--------|
+| **GitHub Pages**   | `npm run deploy` |
+| **Vercel**         | Import repository → auto-detect Vite |
+| **Netlify**        | Drag & drop `dist/` or connect repo |
+| **Cloudflare Pages** | Connect repository → set build command to `npm run build` |
+
+---
+
+## 📁 Project Structure
+
 ├── public/
 │   └── images/          # Project images
 ├── src/
@@ -112,18 +117,30 @@ Cloudflare Pages	Connect repo
 ├── index.html
 ├── vite.config.js
 └── tailwind.config.js
-🤝 Contributing
-git checkout -b feature/your-feature
-git commit -m "feat: add feature"
-git push origin feature/your-feature
 
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Follow these steps:
+
+```bash
+# Create a new branch
+git checkout -b feature/your-feature
+
+# Commit your changes
+git commit -m "feat: add your feature"
+
+# Push to GitHub
+git push origin feature/your-feature
+```
 Then open a Pull Request 🚀
 
-📄 License
+##📄 License
 
 This project is licensed under the MIT License
 
-👨‍💻 Author
+##👨‍💻 Author
 
 Safal Sharma
 NLP Researcher | Data Science Engineer | AI Builder
