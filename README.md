@@ -82,7 +82,7 @@ npm run dev
 - http://localhost:5173
 
   
-###📦 Build & Deployment
+### 📦 Build & Deployment
 ```bash
 npm run build
 ```
@@ -136,11 +136,11 @@ git push origin feature/your-feature
 ```
 Then open a Pull Request 🚀
 
-##📄 License
+## 📄 License
 
 - This project is licensed under the MIT License
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Safal Sharma
 -NLP Researcher | Data Science Engineer | AI Builder
@@ -149,6 +149,6 @@ Safal Sharma
 
 💡 Blending AI with immersive web experiences
 
- - Made with ❤️ by Safal Sharma
+  Made with ❤️ by Safal Sharma
 
 </div> 
