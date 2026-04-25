@@ -80,6 +80,8 @@ npm run dev
 
 ```
 - http://localhost:5173
+
+  
 ###📦 Build & Deployment
 ```bash
 npm run build
@@ -87,4 +89,47 @@ npm run build
 ### 👀 Preview
 ```bash
 npm run preview
-```
+🚀 Deployment
+Platform	Method
+GitHub Pages	npm run deploy
+Vercel	Import repo
+Netlify	Drag & drop dist/
+Cloudflare Pages	Connect repo
+📁 Project Structure
+3d-portfolio/
+├── public/
+│   └── images/          # Project images
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── constants/
+│   ├── hoc/
+│   ├── utils/
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── vite.config.js
+└── tailwind.config.js
+🤝 Contributing
+git checkout -b feature/your-feature
+git commit -m "feat: add feature"
+git push origin feature/your-feature
+
+Then open a Pull Request 🚀
+
+📄 License
+
+This project is licensed under the MIT License
+
+👨‍💻 Author
+
+Safal Sharma
+NLP Researcher | Data Science Engineer | AI Builder
+
+<div align="center">
+
+💡 Blending AI with immersive web experiences
+
+Made with ❤️ by Safal Sharma
+
+</div> ```
