@@ -52,15 +52,15 @@ ProviderCommand / MethodGitHub Pagesnpm run deploy (via gh-pages)VercelImport re
 
 📁 Project Structure
 3d-portfolio/
-├── public/             # Static assets (fonts, images, models)
+├── public/                 # Static assets (fonts, images, models)
 ├── src/
-│   ├── assets/         # Images and icons
-│   ├── components/     # Reusable React components
-│   ├── constants/      # Site content & data (projects, skills, etc.)
-│   ├── hoc/            # Higher-order components
-│   ├── utils/          # Utility functions
-│   ├── App.jsx         # Root component & routing
-│   └── main.jsx        # Application entry point
+│   ├── assets/             # Images and icons
+│   ├── components/         # Reusable React components
+│   ├── constants/          # Site content & data (projects, skills, etc.)
+│   ├── hoc/                # Higher-order components
+│   ├── utils/              # Utility functions
+│   ├── App.jsx             # Root component & routing
+│   └── main.jsx            # Application entry point
 ├── index.html
 ├── vite.config.js
 └── tailwind.config.js
