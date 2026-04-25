@@ -89,6 +89,8 @@ npm run build
 ### 👀 Preview
 ```bash
 npm run preview
+```
+```
 🚀 Deployment
 Platform	Method
 GitHub Pages	npm run deploy
