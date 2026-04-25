@@ -1,84 +1,90 @@
-🚀 Safal Sharma — 3D Portfolio
+# 🚀 Safal Sharma — 3D Developer Portfolio
+
 <div align="center">
-A modern, interactive 3D developer portfolio showcasing NLP Research & Data Science expertise.
-🌐 Live Site →
+
+### 🌌 Immersive 3D Portfolio for NLP & Data Science
+
+A modern, interactive 3D portfolio showcasing expertise in **Natural Language Processing**, **Machine Learning**, and **Data Science**.
+
+🔗 **Live Demo:** *[(https://safal098.github.io/3d-portfolio/)]*  
+⭐ If you like this project, consider giving it a star!
+
 </div>
 
-📖 About
-This is my personal portfolio website built with a focus on immersive 3D visuals and smooth user experience. It highlights my work as an NLP Research & Data Science Lead, featuring interactive Three.js scenes, animated UI components, and a clean, responsive design.
+---
 
-✨ Features
+## 🌐 Preview
 
-Interactive 3D scenes powered by Three.js and React Three Fiber
-Smooth animations with Framer Motion
-Fully responsive design across desktop and mobile
-Fast performance with Vite bundler
-Contact form integration
-Project showcase with live links and source code
-Skills & experience timeline
+<p align="center">
+  <img src="https://github.com/safal098/3d-portfolio/blob/main/public/images/cancer.png" width="250"/>
+  <img src="https://github.com/safal098/3d-portfolio/blob/main/public/images/facedetect.png" width="250"/>
+  <img src="https://github.com/safal098/3d-portfolio/blob/main/public/images/weather.png" width="250"/>
+</p>
 
+---
 
-🛠️ Tech Stack
-CategoryTechnologyFrameworkReact 183D RenderingThree.js · React Three Fiber · DreiAnimationsFramer MotionStylingTailwind CSSBuild ToolViteDeploymentGitHub Pages
+## 📖 Overview
 
-🚀 Getting Started
-Prerequisites
+This portfolio goes beyond a traditional resume by combining **interactive 3D visuals**, **smooth animations**, and **modern UI/UX design**.
 
-Node.js >= 18.x
-npm >= 9.x
+It highlights my work as an **NLP Researcher & Data Science Engineer**, presenting projects, technical skills, and real-world applications in an engaging and visually rich format.
 
-Installation
-bash# 1. Clone the repository
+---
+
+## ✨ Features
+
+- 🎯 Interactive 3D scenes powered by **Three.js** & **React Three Fiber**
+- ⚡ Smooth animations using **Framer Motion**
+- 📱 Fully responsive across all devices
+- 🚀 Fast performance with **Vite**
+- 📬 Contact form integration
+- 📊 Project showcase with live demos & source code
+- 🧠 Skills and experience timeline
+
+---
+
+## 🛠️ Tech Stack
+
+| Category        | Technology |
+|----------------|-----------|
+| **Frontend**   | React 18 |
+| **3D Rendering** | Three.js · React Three Fiber · Drei |
+| **Animations** | Framer Motion |
+| **Styling**    | Tailwind CSS |
+| **Build Tool** | Vite |
+| **Deployment** | GitHub Pages / Vercel / Netlify |
+
+---
+
+## ⚙️ Getting Started
+
+### 📋 Prerequisites
+
+- Node.js ≥ 18.x  
+- npm ≥ 9.x  
+
+---
+
+### 📥 Installation
+
+```bash
 git clone https://github.com/safal098/3d-portfolio.git
-
-# 2. Navigate into the project directory
 cd 3d-portfolio
-
-# 3. Install dependencies
 npm install
-Development
-Start the local development server with hot-module replacement:
-bashnpm run dev
-The app will be available at http://localhost:5173.
 
-📦 Build & Deployment
-1. Create a production build
-bashnpm run build
-2. Preview the production build locally
-bashnpm run preview
-3. Deploy
-The generated dist/ folder can be deployed to any static hosting provider:
-ProviderCommand / MethodGitHub Pagesnpm run deploy (via gh-pages)VercelImport repo → auto-detected Vite configNetlifyDrag & drop dist/ or connect repoCloudflare PagesConnect repo, set build command to npm run build
+```
+### 💻 Development
 
-📁 Project Structure
-3d-portfolio/
-├── public/                 # Static assets (fonts, images, models)
-├── src/
-│   ├── assets/             # Images and icons
-│   ├── components/         # Reusable React components
-│   ├── constants/          # Site content & data (projects, skills, etc.)
-│   ├── hoc/                # Higher-order components
-│   ├── utils/              # Utility functions
-│   ├── App.jsx             # Root component & routing
-│   └── main.jsx            # Application entry point
-├── index.html
-├── vite.config.js
-└── tailwind.config.js
+```bash
+npm run dev
 
-🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-
-Fork the repository
-Create your feature branch: git checkout -b feature/your-feature
-Commit your changes: git commit -m 'feat: add your feature'
-Push to the branch: git push origin feature/your-feature
-Open a Pull Request
-
-
-📄 License
-This project is open source and available under the MIT License.
-
-<div align="center">
-Made with ❤️ by Safal Sharma
-⭐ If you found this helpful, give it a star!
-</div>
+```
+- http://localhost:5173
+###📦 Build & Deployment
+```bash
+npm run build
+```
+### 👀 Preview
+```bash
+npm run preview
+```
